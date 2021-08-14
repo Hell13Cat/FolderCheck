@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <AssemblyName>FolderCheck</AssemblyName>
+    <Authors>Nyako</Authors>
+    <Company />
+    <Product />
+    <RepositoryUrl>https://github.com/Hell13Cat/FolderCheck</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Hell13Cat/FolderCheck</PackageProjectUrl>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Description>Автоматическая проверка папок на наличие там новых файлов [Test coding]</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Nyako.snk</AssemblyOriginatorKeyFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageId>FolderCheck</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Desktop\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
